@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/chat_edit_text"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="21-й Век Столетие, отмеченное своей относительной стабильностью. Земля более или менее стабильна в течение этого периода, и многие из ее стран остаются нетронутыми, и лишь немногие из них пострадали от жестоких прокси-войн. Ближе к концу двадцать первого века радикализм, изоляционизм и пропасть между Западом и Востоком постепенно начинают исчезать, поскольку все стремятся коллективно колонизировать Солнечную систему. "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="22-й Век Колонизация других планет начинает происходить после того, как инвестиции в ядерные двигатели значительно снижают затраты на освоение космоса. В этом столетии Nanotrasen входит в игру и, в надежде получить большую долю в планетарных ресурсах, вкладывает значительные средства в колонизацию Марса. На Марсе обнаружена плазменная жилка, которая привела к созданию первого сверхсветового двигателя. Феномен синего пространства был зафиксирован всего через несколько лет после этого открытия. "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="23-й Век Технологические достижения и исследовательские усилия привели к первому контакту со скреллами и подтвердили существование внеземной жизни. В известной всем резолюции при широкой общественной поддержке устанавливаются дипломатические и военные связи и создается Человеческо-Скреллианский Альянс. Nanotrasen продолжает укреплять свои владения на Марсе в течение этого периода, обеспечивая мертвую хватку на рынках плазмы и олова - это выгодное положение используется для дальнейшей монополизации отдаленных плазменных месторождений. "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="24-й Век Человечество продолжает делать инвестиции в космические путешествия и систематически расширяет сферу своего влияния, основывая несколько колоний. В середине века, разведочное судно Nanotrasen обнаруживает существование таяр. Результатом стала кровавая гражданская война, кульминацией которой стал раскол правительства таяр и их родной планеты. Nanotrasen инвестирует значительные средства в индустриализацию после этой войны, тем самым обеспечивая монополию на Адомае. "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="25-й Век Человеческое исследовательское судно захвачено в неизведанном космосе военным фрегатом кидан. Команда убита, а корабль уничтожен. Секретная информация о человеческих колониях просачивается к киданам, что приводит к систематическим рейдам против отдаленных колоний. Это вторжение вызвало немедленную военную реакцию со стороны Альянса людей и скреллов, а следовательно сокрушительное поражение Киданского флота в битве при Аргосе. Кидана загоняют обратно в оборонительную войну, которая приводит к орбитальной бомбардировке их родного мира. Жесткие меры для поддержки военных действий людскими ресурсами приводят к картофельному голоду и русские колонисты, опасаясь за свое наследие, восстают и убивают местных сановников Транс-Солнечной Федерации. Вскоре после этого колония Сигни заявляет о своей независимости и формирует СССП. "/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/chat_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:hint="Введите сообщение..."
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chat_send_button"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/chat_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Отправить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
